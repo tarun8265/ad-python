@@ -1,0 +1,19 @@
+class Father:
+    # def __init__(self):
+    def __init__(self,m): 
+          self.money=m
+          print("Father class constructor")
+
+    def show(self):
+        print("Father class instance method")
+
+class Son(Father):
+    def disp(self):   
+        print("Son class instance method")         
+
+# s=Son()  
+s=Son(1000)                         # auto call father constructor
+print(s.money)
+s.disp()        
+s.show()
+
